@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: mcp_server
+  config:
+    import: classpath:env/${spring.profiles.active:local}/application-${spring.profiles.active:local}.yml
+
+server:
+  port: 8080

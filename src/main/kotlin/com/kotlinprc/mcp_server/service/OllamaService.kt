@@ -14,7 +14,7 @@ class OllamaService(private val webClient: WebClient) {
 
     private val log = LoggerFactory.getLogger(OllamaService::class.java)
 
-    @Value("\${ollama.base-url}")
+    @Value("\${ollama.base-url:''}")
     private lateinit var ollamaBaseUrl: String
 
 
